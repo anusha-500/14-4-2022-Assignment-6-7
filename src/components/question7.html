@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<h3>assignment-7</h3>
+<h1>Question-7</h1>
+<h3>Remove the duplicate Items in an array</h3>
+<body>
+<script>
+function removeDuplicates(num) {
+var x,
+len=num.length,
+out=[],
+obj={};
+for (x=0; x<len; x++) {
+obj[num[x]]=0;
+}
+for (x in obj) {
+out.push(x);
+}
+return out;
+}
+var Mynum = [1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6];
+result = removeDuplicates(Mynum);
+console.log(Mynum);
+console.log(result);
+</script>
+</body>
+</html>
